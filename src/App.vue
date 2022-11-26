@@ -1,12 +1,15 @@
 <template>
-  <div class="container">
-    <div class="bg-vue text-vue2"><h1>Hallo Welt</h1></div>
-  </div>
+<TheTwoColumnsLayout></TheTwoColumnsLayout>
 </template>
 
 <script>
+import  TheTwoColumnsLayout from "./layouts/TheTwoColumnsLayout"
+
 export default {
   name: "App",
+  components: {
+    TheTwoColumnsLayout,
+  }
 };
 </script>
 
