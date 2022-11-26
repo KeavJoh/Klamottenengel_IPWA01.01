@@ -1,14 +1,14 @@
 <template>
-<TheTwoColumnsLayout></TheTwoColumnsLayout>
+<HomePage/>
 </template>
 
 <script>
-import  TheTwoColumnsLayout from "./layouts/TheTwoColumnsLayout"
+import  HomePage from "./pages/HomePage";
 
 export default {
   name: "App",
   components: {
-    TheTwoColumnsLayout,
+    HomePage,
   }
 };
 </script>
