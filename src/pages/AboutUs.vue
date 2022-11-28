@@ -1,16 +1,16 @@
 <template>
-<TheTwoColumnsLayout></TheTwoColumnsLayout>
+<TheOneColumnsLayout/>
 </template>
 
 <script>
-import TheTwoColumnsLayout from "../layouts/TheTwoColumnsLayout";
+import TheOneColumnsLayout from "../layouts/TheOneColumnsLayout";
 
 export default {
-name: "AboutUs",
-components: {
-    TheTwoColumnsLayout,
-}
-}
+  name: "AboutUs",
+  components: {
+    TheOneColumnsLayout,
+  },
+};
 </script>
 
 <style scoped></style>

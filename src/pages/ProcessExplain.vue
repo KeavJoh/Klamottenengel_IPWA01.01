@@ -1,5 +1,5 @@
 <template>
-<TheOneColumnsLayout></TheOneColumnsLayout>
+<TheOneColumnsLayout/>
 </template>
 
 <script>
