@@ -17,16 +17,19 @@
         </div>
       </div>
     </main>
+    <TheFooter></TheFooter>
   </div>
 </template>
 
 <script>
 import TheNavbar from "../components/TheNavbar";
+import TheFooter from "../components/TheFooter";
 
 export default {
   name: "TheTwoColumnsLayout",
   components: {
     TheNavbar,
+    TheFooter,
   },
   props: {
     leftColumnClass: {

@@ -8,16 +8,16 @@
         <div class="collapse navbar-collapse text-center h5" id="navbarsExample11">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Startseite</a>
+                    <router-link class="nav-link" to="/">Startseite</router-link>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Ablauf</a>
+                    <router-link class="nav-link" to="/process">Ablauf</router-link>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Partnerländer</a>
+                    <router-link class="nav-link" to="/partner_countries">Partnerländer</router-link>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Über Uns</a>
+                    <router-link class="nav-link" to="/about_us">Über Uns</router-link>
                 </li>
             </ul>
         </div>
@@ -35,5 +35,8 @@ export default {
 .navbar {
   padding-top: unset !important;
   padding-bottom: unset !important;
+}
+.active {
+  text-decoration: underline;
 }
 </style>
