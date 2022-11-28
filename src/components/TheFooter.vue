@@ -6,7 +6,7 @@
         <section class="mt-5">
           <div class="row text-center d-flex justify-content-center pt-2">
             <div class="col-md-2">
-              <h6 class="font-weight-bold active">
+              <h6 class="font-weight-bold active ">
                 <router-link to="/" class="text-white no-underline">Startseite</router-link>
               </h6>
             </div>
