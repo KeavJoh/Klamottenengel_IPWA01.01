@@ -10,13 +10,13 @@
                 <li class="nav-item active">
                     <router-link class="nav-link" to="/">Startseite</router-link>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <router-link class="nav-link" to="/process">Ablauf</router-link>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <router-link class="nav-link" to="/partner_countries">Partnerländer</router-link>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <router-link class="nav-link" to="/about_us">Über Uns</router-link>
                 </li>
             </ul>
@@ -35,8 +35,5 @@ export default {
 .navbar {
   padding-top: unset !important;
   padding-bottom: unset !important;
-}
-.active {
-  text-decoration: underline;
 }
 </style>

@@ -6,27 +6,27 @@
         <section class="mt-5">
           <div class="row text-center d-flex justify-content-center pt-2">
             <div class="col-md-2">
-              <h6 class="font-weight-bold">
-                <a href="#!" class="text-white no-underline">Startseite</a>
+              <h6 class="font-weight-bold active">
+                <router-link to="/" class="text-white no-underline">Startseite</router-link>
               </h6>
             </div>
             <div class="col-md-2">
-              <h6 class="font-weight-bold">
-                <a href="#!" class="text-white no-underline">Ablauf</a>
+              <h6 class="font-weight-bold active">
+                <router-link to="/process" class="text-white no-underline">Ablauf</router-link>
               </h6>
             </div>
             <div class="col-md-2">
-              <h6 class="font-weight-bold">
-                <a href="#!" class="text-white no-underline">Partnerländer</a>
+              <h6 class="font-weight-bold active">
+                <router-link to="/partner_countries" class="text-white no-underline">Partnerländer</router-link>
               </h6>
             </div>
             <div class="col-md-2">
-              <h6 class="font-weight-bold">
-                <a href="#!" class="text-white no-underline">Über Uns</a>
+              <h6 class="font-weight-bold active">
+                <router-link to="/about_us" class="text-white no-underline">Über Uns</router-link>
               </h6>
             </div>
             <div class="col-md-2">
-              <h6 class="font-weight-bold">
+              <h6 class="font-weight-bold active">
                 <router-link to="/impressum" class="text-white no-underline">Impressum</router-link>
               </h6>
             </div>
