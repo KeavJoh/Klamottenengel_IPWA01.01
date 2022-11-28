@@ -1,7 +1,7 @@
 <template>
   <!-- Remove the container if you want to extend the Footer to full width. -->
   <div class="footer bg-vue">
-    <footer class="text-center text-white bg-vue">
+    <footer class="text-center text-white pt-1 bg-vue">
       <div class="container">
         <section class="mt-5">
           <div class="row text-center d-flex justify-content-center pt-2">
@@ -64,7 +64,6 @@ export default {
 
 <style scoped>
 .footer {
-  position: absolute;
   bottom: 0px;
   width: 100%;
   margin-top: 5em;

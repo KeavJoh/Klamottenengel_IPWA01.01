@@ -34,4 +34,16 @@ export default {
 .active a.router-link-exact-active {
   color: rgb(65, 184, 131) !important;
 }
+.img-page {
+  width: 400px;
+}
+.border-vue {
+  border-color: rgb(52, 73, 94) !important;
+}
+.btn-hover:hover {
+  color: rgb(52, 73, 94) !important;
+}
+.btn-select {
+  width: 80%;
+}
 </style>

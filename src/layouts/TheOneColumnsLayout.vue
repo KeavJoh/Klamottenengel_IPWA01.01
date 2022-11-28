@@ -5,7 +5,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-12">
-            <slot name="maintCol">
+            <slot name="mainCol">
               <h1>Linke Seite</h1>
             </slot>
           </div>
