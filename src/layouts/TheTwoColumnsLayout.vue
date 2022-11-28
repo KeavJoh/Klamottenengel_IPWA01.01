@@ -1,23 +1,33 @@
 <template>
-  <div class="container-fluid" :class="containerClasses">
-    <div class="row" :class="rowClasses">
-      <div :class="leftColumnClasses">
-        <slot name="leftCol">
-          <h1>Linke Seite</h1>
-        </slot>
+  <div>
+    <TheNavbar></TheNavbar>
+    <main>
+      <div class="container-fluid" :class="containerClasses">
+        <div class="row" :class="rowClasses">
+          <div :class="leftColumnClasses">
+            <slot name="leftCol">
+              <h1>Linke Seite</h1>
+            </slot>
+          </div>
+          <div :class="rightColumnClasses">
+            <slot name="rightCol">
+              <h1>Rechte Seite</h1>
+            </slot>
+          </div>
+        </div>
       </div>
-      <div :class="rightColumnClasses">
-        <slot name="rightCol">
-          <h1>Rechte Seite</h1>
-        </slot>
-      </div>
-    </div>
+    </main>
   </div>
 </template>
 
 <script>
+import TheNavbar from "../components/TheNavbar";
+
 export default {
   name: "TheTwoColumnsLayout",
+  components: {
+    TheNavbar,
+  },
   props: {
     leftColumnClass: {
       type: String,

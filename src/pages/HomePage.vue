@@ -1,12 +1,5 @@
 <template>
-  <TheTwoColumnsLayout>
-    <template #leftCol>
-        <div class="bg-vue">Hallo</div>
-    </template>
-    <template #rightCol>
-        <div class="bg-vue2">Test</div>
-    </template>
-  </TheTwoColumnsLayout>
+  <TheTwoColumnsLayout/>
 </template>
 
 <script>
