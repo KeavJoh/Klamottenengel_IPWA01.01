@@ -4,6 +4,7 @@ import ProcessExplain from "@/pages/ProcessExplain";
 import PartnerCountries from "@/pages/PartnerCountries";
 import AboutUs from "@/pages/AboutUs";
 import ImpressumPage from "@/pages/ImpressumPage";
+import OfficeFormularPage from "@/pages/OfficeFormularPage";
 // Umstellung auf WebHashHistory wenn veröffentlicht evt nötig
 
 const router = createRouter({
@@ -30,6 +31,10 @@ const router = createRouter({
     {
       path: "/impressum",
       component: ImpressumPage,
+    },
+    {
+      path: "/form/office",
+      component: OfficeFormularPage,
     }
   ],
 });

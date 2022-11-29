@@ -2,7 +2,7 @@
   <div>
     <TheNavbar />
     <main>
-      <div class="container-fluid">
+      <div class="container-fluid d-flex align-items-center">
         <slot name="mainSlot"></slot>
       </div>
     </main>

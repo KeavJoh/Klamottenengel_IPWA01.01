@@ -104,7 +104,7 @@
                     kommen sie während unserer Öffnungszeiten Mo - Fr von 15-20
                     Uhr vorbei.
                   </p>
-                  <router-link to class="btn btn-hover bg-vue2 fs-4 btn-select"
+                  <router-link to="/form/office" class="btn btn-hover bg-vue2 fs-4 btn-select"
                     >Zur Abgabe</router-link
                   >
                 </div>
