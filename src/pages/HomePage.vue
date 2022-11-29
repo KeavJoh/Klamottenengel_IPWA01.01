@@ -120,7 +120,7 @@
                     zu Hause oder auf der Arbeit ein. Abholzeiten sind Mo - Fr
                     von 09-20 Uhr.
                   </p>
-                  <router-link to="" class="btn btn-hover bg-vue2 fs-4 btn-select"
+                  <router-link to="/form/shipping" class="btn btn-hover bg-vue2 fs-4 btn-select"
                     >Zur Abholung</router-link
                   >
                 </div>
