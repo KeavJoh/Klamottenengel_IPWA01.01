@@ -4,7 +4,7 @@
       <form class="container mt-5">
         <div class="row g-3">
           <div
-            class="col-md-12 form-check form-switch form-check-reverse mb-5 ms-2"
+            class="col-md-12 form-check form-switch form-check-reverse ms-2"
           >
             <input
               class="form-check-input"
