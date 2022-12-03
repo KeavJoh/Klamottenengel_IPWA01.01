@@ -1,5 +1,8 @@
 <template>
-  <div class="mt-5">
+  <div>
+    <div class="row mb-3">
+      <h3 class="underline">Abholung bei Ihnen</h3>
+    </div>
     <!-- 2 column grid layout with text inputs for the first and last names -->
     <div class="row mb-4">
       <div class="col">

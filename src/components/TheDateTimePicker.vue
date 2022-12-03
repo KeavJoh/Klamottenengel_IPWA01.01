@@ -2,7 +2,7 @@
   <div>
     <div class="row">
       <div class="mt-4">
-        <p>
+        <p class="underline">
           Bitte wählen Sie einen Abholtermin Mo-Fr zwischen 09:00 Uhr und 20:00
           Uhr
         </p>

@@ -46,4 +46,7 @@ export default {
 .btn-select {
   width: 80%;
 }
+.underline {
+    text-decoration: underline;
+}
 </style>

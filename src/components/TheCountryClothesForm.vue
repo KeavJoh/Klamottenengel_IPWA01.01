@@ -2,7 +2,7 @@
   <div>
     <div class="row">
       <div class="mt-4">
-        <p>
+        <p class="underline">
           Bitte wählen Sie ein Kriesengebiet. Ist kein Kriesengebiet ausgewählt,
           verwalten wir Ihre Spenden nach Bedarf der Gebiete.
         </p>
@@ -19,7 +19,7 @@
     </div>
 
     <!-- Message input -->
-    <p>Bitte teilen Sie uns kurz mit, was Sie Spenden möchten</p>
+    <p class="underline">Bitte teilen Sie uns kurz mit, was Sie Spenden möchten</p>
     <div class="form-outline mb-4">
       <textarea
         class="form-control"
@@ -37,4 +37,5 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+</style>

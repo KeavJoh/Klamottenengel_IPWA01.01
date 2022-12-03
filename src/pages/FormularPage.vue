@@ -2,7 +2,7 @@
   <TheFreeColumsLayout>
     <template #mainSlot>
       <form class="container mt-5">
-        <div class="row g-3">
+        <div class="row">
           <div class="col-md-12 form-check form-switch form-check-reverse ms-2">
             <input
               class="form-check-input"
@@ -15,10 +15,10 @@
             >
           </div>
         </div>
-        <div v-if="officeForm" class="row g-3">
+        <div v-if="officeForm" class="row mt-5">
           <TheOfficeForm></TheOfficeForm>
         </div>
-        <div v-if="!officeForm" class="row g-3">
+        <div v-if="!officeForm" class="row mt-5">
           <TheShippingForm></TheShippingForm>
         </div>
         <!-- Submit button -->
