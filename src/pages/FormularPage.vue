@@ -1,7 +1,7 @@
 <template>
   <TheFreeColumsLayout>
     <template #mainSlot>
-      <form class="container mt-5">
+      <Form class="container mt-5">
         <div class="row">
           <div class="col-md-12 form-check form-switch form-check-reverse ms-2">
             <input
@@ -21,11 +21,7 @@
         <div v-if="!officeForm" class="row mt-5">
           <TheShippingForm></TheShippingForm>
         </div>
-        <!-- Submit button -->
-        <button type="submit" class="btn btn-primary btn-block mb-4">
-          Place order
-        </button>
-      </form>
+      </Form>
     </template>
   </TheFreeColumsLayout>
 </template>
@@ -34,6 +30,7 @@
 import TheFreeColumsLayout from "@/layouts/TheFreeColumsLayout";
 import TheOfficeForm from "../components/TheOfficeForm";
 import TheShippingForm from "../components/TheShippingForm";
+import { Form } from "vee-validate";
 
 export default {
   name: "OfficeFormularPage",
@@ -46,6 +43,7 @@ export default {
     TheFreeColumsLayout,
     TheOfficeForm,
     TheShippingForm,
+    Form,
   },
   methods: {
     changeForm() {

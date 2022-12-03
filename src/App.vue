@@ -47,6 +47,6 @@ export default {
   width: 80%;
 }
 .underline {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 </style>
