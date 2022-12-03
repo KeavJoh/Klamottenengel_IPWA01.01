@@ -33,24 +33,28 @@
         <label for="inputZip" class="form-label">Postleitzahl</label>
       </div>
     </div>
-
     <!-- Number input -->
     <div class="form-outline">
       <input type="text" id="form6Example6" class="form-control" />
       <label class="form-label" for="form6Example6">Telefonnumer</label>
     </div>
+
+    <TheDateTimePicker></TheDateTimePicker>
+
     <TheCountryClothesForm></TheCountryClothesForm>
   </div>
 </template>
 
 <script>
 import TheCountryClothesForm from "../components/TheCountryClothesForm";
+import TheDateTimePicker from "../components/TheDateTimePicker";
 
 export default {
   name: "TheShippingForm",
   components: {
     TheCountryClothesForm,
-  }
+    TheDateTimePicker,
+  },
 };
 </script>
 
