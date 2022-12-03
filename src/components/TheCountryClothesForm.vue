@@ -8,7 +8,7 @@
         </p>
         <Field
           as="select"
-          name="partnerCountrie"
+          name="Zielland"
           class="form-select mb-4"
           aria-label="Kriesengebiet"
         >
@@ -30,7 +30,7 @@
     <div class="form-outline mb-4">
       <Field
         as="textarea"
-        name="additionalInformation"
+        name="Informationen"
         class="form-control"
         id="AdditionalInformation"
         rows="4"

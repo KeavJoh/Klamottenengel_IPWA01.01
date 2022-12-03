@@ -1,5 +1,6 @@
 <template>
-  <Form @submit="submitData">
+  <Form @submit="submitData" :validation-schema="schema" v-slot="{ errors }">
+    <div>{{ errors }}</div>
     <div>
       <div class="row mb-3">
         <h3 class="underline">Abholung bei Ihnen</h3>
@@ -10,7 +11,7 @@
           <div class="form-outline">
             <Field
               as="input"
-              name="firstName"
+              name="Vorname"
               type="text"
               id="firstName"
               class="form-control"
@@ -22,7 +23,7 @@
           <div class="form-outline">
             <Field
               as="input"
-              name="lastName"
+              name="Nachname"
               type="text"
               id="lastName"
               class="form-control"
@@ -37,7 +38,7 @@
         <div class="form-outline mb-4 col-md-6">
           <Field
             as="input"
-            name="adressLabel"
+            name="Adresse"
             type="text"
             id="form6Example4"
             class="form-control"
@@ -49,7 +50,7 @@
         <div class="form-outline mb-4 col-md-4">
           <Field
             as="input"
-            name="cityLabel"
+            name="Stadt"
             type="text"
             id="form6Example4"
             class="form-control"
@@ -59,7 +60,7 @@
         <div class="col-md-2">
           <Field
             as="input"
-            name="zipCode"
+            name="Postleitzahl"
             type="text"
             class="form-control"
             id="inputZip"
@@ -71,7 +72,7 @@
       <div class="form-outline">
         <Field
           as="input"
-          name="phoneNumber"
+          name="Telefonnummer"
           type="text"
           id="form6Example6"
           class="form-control"
@@ -93,9 +94,18 @@
 import TheCountryClothesForm from "../components/TheCountryClothesForm";
 import TheDateTimePicker from "../components/TheDateTimePicker";
 import { Form, Field } from "vee-validate";
+import * as yup from "yup";
 
 export default {
   name: "TheShippingForm",
+  data() {
+    const schema = yup.object().shape({
+      Vorname: yup.string().required(),
+    })
+    return {
+      schema,
+    };
+  },
   components: {
     TheCountryClothesForm,
     TheDateTimePicker,
