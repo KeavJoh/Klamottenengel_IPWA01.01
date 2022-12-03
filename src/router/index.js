@@ -5,7 +5,6 @@ import PartnerCountries from "@/pages/PartnerCountries";
 import AboutUs from "@/pages/AboutUs";
 import ImpressumPage from "@/pages/ImpressumPage";
 import FormularPage from "@/pages/FormularPage";
-import Picker from "@/components/TheDateTimePicker";
 // Umstellung auf WebHashHistory wenn veröffentlicht evt nötig
 
 const router = createRouter({
@@ -36,10 +35,6 @@ const router = createRouter({
     {
       path: "/form/donate",
       component: FormularPage,
-    },
-    {
-      path: "/form/picker",
-      component: Picker,
     },
   ],
 });
