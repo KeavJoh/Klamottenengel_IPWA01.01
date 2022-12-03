@@ -1,5 +1,5 @@
 <template>
-<TheCountryClothesForm></TheCountryClothesForm>
+  <TheCountryClothesForm></TheCountryClothesForm>
 </template>
 
 <script>
@@ -9,7 +9,7 @@ export default {
   name: "TheOfficeForm",
   components: {
     TheCountryClothesForm,
-  }
+  },
 };
 </script>
 

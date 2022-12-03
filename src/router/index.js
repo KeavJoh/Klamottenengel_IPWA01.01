@@ -40,7 +40,7 @@ const router = createRouter({
     {
       path: "/form/picker",
       component: Picker,
-    }
+    },
   ],
 });
 
