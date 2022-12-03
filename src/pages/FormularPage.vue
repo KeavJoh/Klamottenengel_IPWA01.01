@@ -3,7 +3,9 @@
     <template #mainSlot>
       <form class="container mt-5">
         <div class="row g-3">
-          <div class="col-md-12 form-check form-switch form-check-reverse">
+          <div
+            class="col-md-12 form-check form-switch form-check-reverse mb-5 ms-2"
+          >
             <input
               class="form-check-input"
               type="checkbox"
@@ -11,7 +13,7 @@
               @click="changeForm"
             />
             <label class="form-check-label" for="flexSwitchCheckReverse"
-              >Reverse switch checkbox input</label
+              >Übergabe an der Geschäftsstelle</label
             >
           </div>
         </div>
@@ -21,6 +23,10 @@
         <div v-if="!officeForm" class="row g-3">
           <TheShippingForm></TheShippingForm>
         </div>
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-primary btn-block mb-4">
+          Place order
+        </button>
       </form>
     </template>
   </TheFreeColumsLayout>
@@ -29,7 +35,7 @@
 <script>
 import TheFreeColumsLayout from "@/layouts/TheFreeColumsLayout";
 import TheOfficeForm from "../components/TheOfficeForm";
-import TheShippingForm from "../components/TheShippingForm"
+import TheShippingForm from "../components/TheShippingForm";
 
 export default {
   name: "OfficeFormularPage",
@@ -45,12 +51,12 @@ export default {
   },
   methods: {
     changeForm() {
-      if(this.officeForm == false) {
+      if (this.officeForm == false) {
         this.officeForm = true;
       } else {
         this.officeForm = false;
       }
-    }
+    },
   },
 };
 </script>

@@ -1,54 +1,27 @@
 <template>
   <div>
-    <div class="col-md-6">
-      <label for="inputEmail4" class="form-label">Email</label>
-      <input type="email" class="form-control" id="inputEmail4" />
-    </div>
-    <div class="col-md-6">
-      <label for="inputPassword4" class="form-label">Password</label>
-      <input type="password" class="form-control" id="inputPassword4" />
-    </div>
-    <div class="col-12">
-      <label for="inputAddress" class="form-label">Address</label>
-      <input
-        type="text"
+    <p>
+      Bitte wählen Sie ein Kriesengebiet. Ist kein Kriesengebiet ausgewählt,
+      verwalten wir Ihre Spenden nach Bedarf der Gebiete.
+    </p>
+    <select class="form-select mb-4" aria-label="Kriesengebiet">
+      <option value="1">Mali</option>
+      <option value="2">Somalia</option>
+      <option value="3">Djibuti</option>
+      <option value="4">Ukraine</option>
+      <option value="5">Eritrea</option>
+      <option value="6">Burkina-Faso</option>
+      <option selected value="6">Nach Bedarf</option>
+    </select>
+    <!-- Message input -->
+    <p>Bitte teilen Sie uns kurz mit, was Sie Spenden möchten</p>
+    <div class="form-outline mb-4">
+      <textarea
         class="form-control"
-        id="inputAddress"
-        placeholder="1234 Main St"
-      />
-    </div>
-    <div class="col-12">
-      <label for="inputAddress2" class="form-label">Address 2</label>
-      <input
-        type="text"
-        class="form-control"
-        id="inputAddress2"
-        placeholder="Apartment, studio, or floor"
-      />
-    </div>
-    <div class="col-md-6">
-      <label for="inputCity" class="form-label">City</label>
-      <input type="text" class="form-control" id="inputCity" />
-    </div>
-    <div class="col-md-4">
-      <label for="inputState" class="form-label">State</label>
-      <select id="inputState" class="form-select">
-        <option selected>Choose...</option>
-        <option>...</option>
-      </select>
-    </div>
-    <div class="col-md-2" id="test">
-      <label for="inputZip" class="form-label" id="1">Zip</label>
-      <input type="text" class="form-control" id="inputZip" />
-    </div>
-    <div class="col-12">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="gridCheck" />
-        <label class="form-check-label" for="gridCheck"> Check me out </label>
-      </div>
-    </div>
-    <div class="col-12">
-      <span class="btn btn-primary" @click="testFunktion"> Sign in </span>
+        id="AdditionalInformation"
+        rows="4"
+        placeholder="Beispiel: 2 Pullover, 3 paar Schuhe, 5 T-Shirt´s"
+      ></textarea>
     </div>
   </div>
 </template>
