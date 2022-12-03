@@ -104,11 +104,6 @@
                     kommen sie während unserer Öffnungszeiten Mo - Fr von 15-20
                     Uhr vorbei.
                   </p>
-                  <router-link
-                    to="/form/donate"
-                    class="btn btn-hover bg-vue2 fs-4 btn-select"
-                    >Zur Abgabe</router-link
-                  >
                 </div>
               </div>
             </div>
@@ -125,6 +120,13 @@
                 </div>
               </div>
             </div>
+              <div class="col-12 mx-auto text-center mt-3">
+                <router-link
+                  to="/form/donate"
+                  class="btn btn-hover bg-vue2 fs-3"
+                  >Zum Spendenformular</router-link
+                >
+              </div>
           </div>
         </div>
       </div>
