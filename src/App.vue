@@ -11,7 +11,6 @@ export default {
 <style>
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
-@import "~@eonasdan/tempus-dominus/dist/css/tempus-dominus.css";
 
 /* overall css */
 .bg-vue {
