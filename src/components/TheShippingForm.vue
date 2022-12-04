@@ -113,16 +113,19 @@
               Bitte wählen Sie einen Abholtermin Mo-Fr zwischen 09:00 Uhr und
               20:00 Uhr
             </p>
-              <Datepicker
-                id="DateTime"
-                v-model="date"
-                :clearable="true"
-                :no-today="true"
-                :disabled-week-days="[6, 0]"
-                week-start="0"
-                :min-time="{ hours: 9, minutes: 0 }"
-                :max-time="{ hours: 20, minutes: 0 }"
-              />
+            <Datepicker
+              id="DateTime"
+              @update:modelValue="handleDate"
+              :value="date"
+              v-model="date"
+              :clearable="true"
+              :no-today="true"
+              :disabled-week-days="[6, 0]"
+              week-start="0"
+              :min-time="{ hours: 9, minutes: 0 }"
+              :max-time="{ hours: 20, minutes: 0 }"
+            />
+            <div id="DatepickerDiv"></div>
           </div>
         </div>
       </div>
@@ -185,8 +188,6 @@
 import { ref } from "vue";
 import Datepicker from "../../node_modules/@vuepic/vue-datepicker";
 import "../../node_modules/@vuepic/vue-datepicker/dist/main.css";
-
-const date = ref();
 </script>
 
 <script>
@@ -220,8 +221,25 @@ export default {
         .string()
         .required("Bitte teilen Sie uns kurz mit was Sie spenden möchten"),
     });
+    const date = ref();
+    let pickedDateTime;
+    let testDateObject;
+    const handleDate = (modelData) => {
+      date.value = modelData;
+      this.testDateObject = date.value;
+      let pickedDay = date.value.getDate();
+      let pickedMonth = date.value.getMonth() + 1;
+      let pickedYear = date.value.getFullYear();
+      let pickedHours = date.value.getHours();
+      let pickedMinutes = date.value.getMinutes();
+      this.pickedDateTime = `${pickedDay}/${pickedMonth}/${pickedYear} ${pickedHours}:${pickedMinutes}`;
+    };
     return {
       schema,
+      date,
+      pickedDateTime,
+      handleDate,
+      testDateObject,
     };
   },
   components: {
@@ -231,7 +249,14 @@ export default {
   },
   methods: {
     submitData(values) {
-      console.log(values);
+      if (this.pickedDateTime == undefined) {
+        document.getElementById(
+          "DatepickerDiv"
+        ).innerHTML += `<small class="text-danger">Bitte geben Sie ein Datum und Uhrzeit an</small>`;
+      } else {
+        console.log(values);
+        console.log(this.pickedDateTime);
+      }
     },
   },
 };
