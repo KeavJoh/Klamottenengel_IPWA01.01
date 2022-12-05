@@ -5,7 +5,8 @@
         <h3 class="underline">Abholung bei Ihnen</h3>
         <p>Nur innerhalb des PLZ Gebiet 28000 - 28999</p>
       </div>
-      <!-- 2 column grid layout with text inputs for the first and last names -->
+
+      <!-- Firstname -->
       <div class="row mb-4">
         <div class="col">
           <div class="form-outline">
@@ -22,6 +23,8 @@
             errors.Vorname
           }}</small>
         </div>
+
+        <!-- Lastname -->
         <div class="col">
           <div class="form-outline">
             <Field
@@ -39,7 +42,7 @@
         </div>
       </div>
 
-      <!-- Text input -->
+      <!-- Adress -->
       <div class="row">
         <div class="form-outline mb-4 col-md-6">
           <div>
@@ -58,6 +61,8 @@
             errors.Adresse
           }}</small>
         </div>
+
+        <!-- City -->
         <div class="form-outline mb-4 col-md-4">
           <div>
             <Field
@@ -73,6 +78,8 @@
             errors.Stadt
           }}</small>
         </div>
+
+        <!-- Zipcode -->
         <div class="col-md-2">
           <div>
             <Field
@@ -89,7 +96,8 @@
           }}</small>
         </div>
       </div>
-      <!-- Number input -->
+
+      <!-- Phone -->
       <div class="form-outline">
         <div>
           <Field
@@ -106,6 +114,7 @@
         }}</small>
       </div>
 
+      <!-- DateTimePicker -->
       <div>
         <div class="row">
           <div class="mt-4">
@@ -130,6 +139,7 @@
         </div>
       </div>
 
+      <!-- Partnercountrie -->
       <div>
         <div>
           <div class="row">
@@ -159,7 +169,7 @@
           }}</small>
         </div>
 
-        <!-- Message input -->
+        <!-- Information area -->
         <p class="underline">
           Bitte teilen Sie uns kurz mit, was Sie Spenden möchten
         </p>
@@ -178,6 +188,8 @@
         errors.Informationen
       }}</small>
     </div>
+
+    <!-- Submit -->
     <button type="submit" class="btn btn-primary btn-block mt-4 mb-4">
       Place order
     </button>
@@ -255,7 +267,19 @@ export default {
         ).innerHTML += `<small class="text-danger">Bitte geben Sie ein Datum und Uhrzeit an</small>`;
       } else {
         console.log(values);
-        console.log(this.pickedDateTime);
+        this.$store.dispatch("loadDonation", {
+          vorname: values.Vorname,
+          nachname: values.Nachname,
+          adresse: values.Adresse,
+          stadt: values.Stadt,
+          postleitzahl: values.Postleitzahl,
+          telefonnummer: values.Telefonnummer,
+          date: this.pickedDateTime,
+          zielland: values.Zielland,
+          informationen: values.Informationen,
+        }).then(() => {
+          console.log("Erfolgreich")
+        })
       }
     },
   },
