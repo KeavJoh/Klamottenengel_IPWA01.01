@@ -1,5 +1,10 @@
 <template>
-  <Form @submit="submitData" :validation-schema="schema" v-slot="{ errors }">
+  <Form
+    @submit="submitData"
+    :validation-schema="schema"
+    v-slot="{ errors }"
+    id="formId"
+  >
     <div>
       <div class="row mb-3">
         <h3 class="underline">Abholung bei Ihnen</h3>
@@ -254,6 +259,7 @@ export default {
       testDateObject,
     };
   },
+  computed: {},
   components: {
     Field,
     Form,
@@ -267,19 +273,21 @@ export default {
         ).innerHTML += `<small class="text-danger">Bitte geben Sie ein Datum und Uhrzeit an</small>`;
       } else {
         console.log(values);
-        this.$store.dispatch("loadDonation", {
-          vorname: values.Vorname,
-          nachname: values.Nachname,
-          adresse: values.Adresse,
-          stadt: values.Stadt,
-          postleitzahl: values.Postleitzahl,
-          telefonnummer: values.Telefonnummer,
-          date: this.pickedDateTime,
-          zielland: values.Zielland,
-          informationen: values.Informationen,
-        }).then(() => {
-          console.log("Erfolgreich")
-        })
+        this.$store
+          .dispatch("loadDonation", {
+            vorname: values.Vorname,
+            nachname: values.Nachname,
+            adresse: values.Adresse,
+            stadt: values.Stadt,
+            postleitzahl: values.Postleitzahl,
+            telefonnummer: values.Telefonnummer,
+            date: this.pickedDateTime,
+            zielland: values.Zielland,
+            informationen: values.Informationen,
+          })
+          .then(() => {
+            console.log("Erfolgreich");
+          });
       }
     },
   },

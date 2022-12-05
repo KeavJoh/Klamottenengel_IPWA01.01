@@ -2,7 +2,7 @@ import { createStore } from "vuex";
 
 const store = createStore({
   state: {
-    vorname: null,
+    vorname: "Kevin",
     nachname: null,
     adresse: null,
     stadt: null,
@@ -14,15 +14,15 @@ const store = createStore({
   },
   mutations: {
     setDonation(state, payload) {
-      state.vorname = payload.vorname,
-      state.nachname = payload.nachname,
-      state.adresse = payload.adresse,
-      state.stadt = payload.stadt,
-      state.postleitzahl = payload.postleitzahl,
-      state.telefonnummer = payload.telefonnummer,
-      state.date = payload.date,
-      state.zielland = payload.zielland,
-      state.informationen = payload.informationen
+      (state.vorname = payload.vorname),
+        (state.nachname = payload.nachname),
+        (state.adresse = payload.adresse),
+        (state.stadt = payload.stadt),
+        (state.postleitzahl = payload.postleitzahl),
+        (state.telefonnummer = payload.telefonnummer),
+        (state.date = payload.date),
+        (state.zielland = payload.zielland),
+        (state.informationen = payload.informationen);
     },
   },
   actions: {
@@ -48,11 +48,13 @@ const store = createStore({
         telefonnummer: donationData.telefonnummer,
         date: donationData.date,
         zielland: donationData.zielland,
-        informationen: donationData.informationen
-      })
+        informationen: donationData.informationen,
+      });
     },
   },
-  getter: {},
+  getters: {
+    getVorname: (state) => state.vorname,
+  },
 });
 
 export default store;
