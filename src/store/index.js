@@ -11,6 +11,7 @@ const store = createStore({
     date: null,
     zielland: null,
     informationen: null,
+    officeForm: false,
   },
   mutations: {
     setDonation(state, payload) {
@@ -23,6 +24,10 @@ const store = createStore({
         (state.date = payload.date),
         (state.zielland = payload.zielland),
         (state.informationen = payload.informationen);
+    },
+
+    setFormStatus(state, payload) {
+      state.officeForm = payload.officeForm;
     },
   },
   actions: {
@@ -51,6 +56,16 @@ const store = createStore({
         informationen: donationData.informationen,
       });
     },
+
+    changeForm(context, payload) {
+      const formStatus = {
+        officeForm: payload.officeForm,
+      };
+
+      context.commit("setFormStatus", {
+        officeForm: formStatus.officeForm,
+      });
+    },
   },
   getters: {
     getVorname: (state) => state.vorname,
@@ -62,6 +77,7 @@ const store = createStore({
     getDate: (state) => state.date,
     getZielland: (state) => state.zielland,
     getInformation: (state) => state.informationen,
+    getOfficeForm: (state) => state.officeForm,
   },
 });
 
