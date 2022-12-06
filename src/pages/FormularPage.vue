@@ -35,12 +35,11 @@ import { Form } from "vee-validate";
 export default {
   name: "OfficeFormularPage",
   data() {
-    return {};
+    return {
+      officeForm: false,
+    };
   },
   computed: {
-    officeForm() {
-      return this.$store.getters.getOfficeForm;
-    },
   },
   components: {
     TheFreeColumsLayout,
@@ -50,17 +49,10 @@ export default {
   },
   methods: {
     changeForm() {
-      let officeForm = this.$store.getters.getOfficeForm;
-      if (officeForm == false) {
-        officeForm = true;
-        this.$store.dispatch("changeForm", {
-          officeForm: officeForm,
-        });
+      if (this.officeForm == false) {
+        this.officeForm = true;
       } else {
-        officeForm = false;
-        this.$store.dispatch("changeForm", {
-          officeForm: officeForm,
-        });
+        this.officeForm = false;
       }
     },
   },
