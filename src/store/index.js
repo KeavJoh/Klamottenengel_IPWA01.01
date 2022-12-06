@@ -2,7 +2,7 @@ import { createStore } from "vuex";
 
 const store = createStore({
   state: {
-    vorname: "Kevin",
+    vorname: "Peter",
     nachname: null,
     adresse: null,
     stadt: null,
