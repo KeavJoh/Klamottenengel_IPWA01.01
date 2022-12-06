@@ -5,7 +5,7 @@
       <h3>Vielen Dank für Ihre Spende!</h3>
       <h5>
         Ihre Spendenanmeldung ist erfolgreich bei uns eingegangen und wird am
-        ....... abgeholt.
+        {{ getDate }} abgeholt.
       </h5>
     </div>
     <div class="row mb-4">
