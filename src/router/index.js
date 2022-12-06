@@ -5,6 +5,7 @@ import PartnerCountries from "@/pages/PartnerCountries";
 import AboutUs from "@/pages/AboutUs";
 import ImpressumPage from "@/pages/ImpressumPage";
 import FormularPage from "@/pages/FormularPage";
+import DonationOutput from "@/pages/DonationOutput";
 // Umstellung auf WebHashHistory wenn veröffentlicht evt nötig
 
 const router = createRouter({
@@ -35,6 +36,10 @@ const router = createRouter({
     {
       path: "/form/donate",
       component: FormularPage,
+    },
+    {
+      path: "/from/execute",
+      component: DonationOutput,
     },
   ],
 });
