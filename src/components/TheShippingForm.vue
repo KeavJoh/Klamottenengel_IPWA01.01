@@ -287,6 +287,7 @@ export default {
           })
           .then(() => {
             console.log("Erfolgreich");
+            this.$router.push("/form/execute");
           });
       }
     },

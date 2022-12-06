@@ -50,9 +50,11 @@
           errors.Informationen
         }}</small>
       </div>
-      <button type="submit" class="btn btn-primary btn-block mb-4 mt-4">
-        Place order
-      </button>
+      <router-link to="/form/execute" custom v-slot="{navigate}"
+        ><button type="submit" class="btn btn-primary btn-block mb-4 mt-4" @click="navigate">
+          Place order
+        </button></router-link
+      >
     </Form>
   </div>
 </template>

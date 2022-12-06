@@ -38,7 +38,7 @@ const router = createRouter({
       component: FormularPage,
     },
     {
-      path: "/from/execute",
+      path: "/form/execute",
       component: DonationOutput,
     },
   ],
