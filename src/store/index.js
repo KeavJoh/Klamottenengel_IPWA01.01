@@ -54,6 +54,14 @@ const store = createStore({
   },
   getters: {
     getVorname: (state) => state.vorname,
+    getNachname: (state) => state.nachname,
+    getAdresse: (state) => state.adresse,
+    getStadt: (state) => state.stadt,
+    getPostleitzahl: (state) => state.postleitzahl,
+    getTelefonnummer: (state) => state.telefonnummer,
+    getDate: (state) => state.date,
+    getZielland: (state) => state.zielland,
+    getInformation: (state) => state.informationen,
   },
 });
 
