@@ -123,7 +123,4 @@ export default {
 </script>
 
 <style scoped>
-.display-7 {
-  font-size: 1.5rem;
-}
 </style>

@@ -49,4 +49,7 @@ export default {
 .underline {
   text-decoration: underline;
 }
+.display-7 {
+  font-size: 1.5rem;
+}
 </style>
