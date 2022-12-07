@@ -287,6 +287,9 @@ export default {
           })
           .then(() => {
             console.log("Erfolgreich");
+            this.$store.dispatch("setFormularStatus", {
+              activeOfficeFormular: false,
+            })
             this.$router.push("/form/execute");
           });
       }

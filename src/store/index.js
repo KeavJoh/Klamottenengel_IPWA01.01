@@ -11,6 +11,7 @@ const store = createStore({
     date: null,
     zielland: null,
     informationen: null,
+    activeOfficeFormular: true,
   },
   mutations: {
     setDonation(state, payload) {
@@ -23,6 +24,10 @@ const store = createStore({
         (state.date = payload.date),
         (state.zielland = payload.zielland),
         (state.informationen = payload.informationen);
+    },
+
+    setFormularStatusFinal(state, payload) {
+      state.activeOfficeFormular = payload.activeOfficeFormular;
     },
   },
   actions: {
@@ -66,6 +71,16 @@ const store = createStore({
       } else {
         this.state.zielland = "Nach Bedarf";
       }
+    },
+
+    setFormularStatus(context, payload) {
+      const formularStatus = {
+        activeOfficeFormular: payload.activeOfficeFormular,
+      }
+
+      context.commit("setFormularStatusFinal", {
+        activeOfficeFormular: formularStatus.activeOfficeFormular,
+      });
     },
   },
   getters: {
