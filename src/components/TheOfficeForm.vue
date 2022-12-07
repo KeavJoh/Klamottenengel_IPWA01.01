@@ -23,7 +23,7 @@
                 <option value="4">Ukraine</option>
                 <option value="5">Eritrea</option>
                 <option value="6">Burkina-Faso</option>
-                <option value="6">Nach Bedarf</option>
+                <option value="7">Nach Bedarf</option>
               </Field>
             </div>
           </div>
@@ -50,10 +50,9 @@
           errors.Informationen
         }}</small>
       </div>
-      <router-link to="/form/execute" custom v-slot="{navigate}"
-        ><button type="submit" class="btn btn-primary btn-block mb-4 mt-4" @click="navigate">
-          Place order
-        </button></router-link
+      <button type="submit" class="btn btn-primary btn-block mb-4 mt-4">
+        Place order
+      </button>
       >
     </Form>
   </div>
@@ -83,6 +82,18 @@ export default {
   methods: {
     submitData(values) {
       console.log(values);
+      this.$store
+        .dispatch("loadDonationOffice", {
+          zielland: values.Zielland,
+          informationen: values.Informationen,
+        })
+        .then(() => {
+          console.log("Erfolgreich");
+          this.$store.dispatch("setFormularStatus", {
+            activeOfficeFormular: true,
+          });
+          this.$router.push("/form/execute");
+        });
     },
   },
 };

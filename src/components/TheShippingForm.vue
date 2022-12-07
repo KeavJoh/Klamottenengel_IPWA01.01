@@ -165,7 +165,7 @@
                 <option value="4">Ukraine</option>
                 <option value="5">Eritrea</option>
                 <option value="6">Burkina-Faso</option>
-                <option value="6">Nach Bedarf</option>
+                <option value="7">Nach Bedarf</option>
               </Field>
             </div>
           </div>
@@ -259,7 +259,6 @@ export default {
       testDateObject,
     };
   },
-  computed: {},
   components: {
     Field,
     Form,

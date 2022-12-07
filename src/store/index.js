@@ -26,11 +26,44 @@ const store = createStore({
         (state.informationen = payload.informationen);
     },
 
+    setDonationOffice(state, payload) {
+      (state.zielland = payload.zielland),
+        (state.informationen = payload.informationen);
+    },
+
     setFormularStatusFinal(state, payload) {
       state.activeOfficeFormular = payload.activeOfficeFormular;
     },
   },
   actions: {
+    loadDonationOffice(context, payload) {
+      const officeDonationData = {
+        zielland: payload.zielland,
+        informationen: payload.informationen,
+      };
+
+      context.commit("setDonationOffice", {
+        zielland: officeDonationData.zielland,
+        informationen: officeDonationData.informationen,
+      });
+
+      if (this.state.zielland == "1") {
+        this.state.zielland = "Mali";
+      } else if (this.state.zielland == "2") {
+        this.state.zielland = "Somalia";
+      } else if (this.state.zielland == "3") {
+        this.state.zielland = "Djibuti";
+      } else if (this.state.zielland == "4") {
+        this.state.zielland = "Ukraine";
+      } else if (this.state.zielland == "5") {
+        this.state.zielland = "Eritrea";
+      } else if (this.state.zielland == "6") {
+        this.state.zielland = "Burkina Faso";
+      } else {
+        this.state.zielland = "Nach Bedarf";
+      }
+    },
+
     loadDonation(context, payload) {
       const donationData = {
         vorname: payload.vorname,
@@ -76,7 +109,7 @@ const store = createStore({
     setFormularStatus(context, payload) {
       const formularStatus = {
         activeOfficeFormular: payload.activeOfficeFormular,
-      }
+      };
 
       context.commit("setFormularStatusFinal", {
         activeOfficeFormular: formularStatus.activeOfficeFormular,
@@ -93,6 +126,7 @@ const store = createStore({
     getDate: (state) => state.date,
     getZielland: (state) => state.zielland,
     getInformationen: (state) => state.informationen,
+    getActiveOfficeFormular: (state) => state.activeOfficeFormular,
   },
 });
 
