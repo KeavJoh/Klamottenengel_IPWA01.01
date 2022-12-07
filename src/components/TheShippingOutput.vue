@@ -56,7 +56,7 @@
     <!-- Phone -->
     <div class="form-outline">
       <div>
-        <p class="bg-vue mb-0 p-2">{{ getTelefonnumer }}</p>
+        <p class="bg-vue mb-0 p-2">{{ getTelefonnummer }}</p>
         <label class="form-label" for="form6Example6">Telefonnummer</label>
       </div>
     </div>
@@ -106,8 +106,8 @@ export default {
     getPostleitzahl() {
       return this.$store.getters.getPostleitzahl;
     },
-    getTelefonnumer() {
-      return this.$store.getters.getTelefonnumer;
+    getTelefonnummer() {
+      return this.$store.getters.getTelefonnummer;
     },
     getDate() {
       return this.$store.getters.getDate;

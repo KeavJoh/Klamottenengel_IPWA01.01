@@ -61,7 +61,7 @@ const store = createStore({
     getTelefonnummer: (state) => state.telefonnummer,
     getDate: (state) => state.date,
     getZielland: (state) => state.zielland,
-    getInformation: (state) => state.informationen,
+    getInformationen: (state) => state.informationen,
   },
 });
 
