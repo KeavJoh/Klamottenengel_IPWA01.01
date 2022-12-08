@@ -239,7 +239,6 @@ export default {
 }
 
 section {
-  padding: 120px 0;
   overflow: hidden;
   background: #fff;
 }
