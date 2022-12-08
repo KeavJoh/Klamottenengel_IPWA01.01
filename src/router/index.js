@@ -11,6 +11,9 @@ import DonationOutput from "@/pages/DonationOutput";
 const router = createRouter({
   // optionen
   history: createWebHistory(),
+  scrollBehavior() {
+    document.getElementById("app").scrollIntoView({ behavior: "smooth" });
+  },
   routes: [
     {
       // deklaration der page

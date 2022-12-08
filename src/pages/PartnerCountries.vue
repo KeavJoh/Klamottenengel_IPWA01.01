@@ -5,7 +5,8 @@
         <div class="row text-center mb-5 bg-vue2 text-vue p-3">
           <h3>Unsere Aktuellen Partnerländer</h3>
           <h5>
-            Je nach Spendenaufkommen beliefern wir unsere Partnerländer alle 3 - 4 Monate
+            Je nach Spendenaufkommen beliefern wir unsere Partnerländer alle 3 -
+            4 Monate
           </h5>
         </div>
         <div class="row ms-5 me-5">
@@ -76,5 +77,4 @@ export default {
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

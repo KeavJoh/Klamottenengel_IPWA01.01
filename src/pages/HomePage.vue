@@ -120,13 +120,11 @@
                 </div>
               </div>
             </div>
-              <div class="col-12 mx-auto text-center mt-3">
-                <router-link
-                  to="/form/donate"
-                  class="btn btn-hover bg-vue2 fs-3"
-                  >Zum Spendenformular</router-link
-                >
-              </div>
+            <div class="col-12 mx-auto text-center mt-3">
+              <router-link to="/form/donate" class="btn btn-hover bg-vue2 fs-3"
+                >Zum Spendenformular</router-link
+              >
+            </div>
           </div>
         </div>
       </div>
