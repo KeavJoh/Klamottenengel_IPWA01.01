@@ -10,7 +10,7 @@
         </div>
         <div class="row ms-5 me-5">
           <div class="col-md-4 mb-5">
-            <div class="card card-size">
+            <div class="card">
               <img src="../assets/Djibuti.png" alt="" />
               <div class="card-body">
                 <p class="card-text text-center display-6">Djibuti</p>
@@ -77,8 +77,4 @@ export default {
 </script>
 
 <style scoped>
-.darc-size {
-  height: 60%;
-  width: 60%;
-}
 </style>

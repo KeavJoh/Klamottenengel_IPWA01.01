@@ -13,6 +13,7 @@
                         <img
                           src="../assets/Klamottenengel_Logo.png"
                           alt="..."
+                          class="img-size"
                         />
                       </div>
                       <div class="col-lg-6 px-xl-10">
@@ -329,5 +330,8 @@ section {
 }
 .rounded {
   border-radius: 0.25rem !important;
+}
+.img-size {
+  width: 100%;
 }
 </style>
