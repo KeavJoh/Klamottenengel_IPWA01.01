@@ -21,7 +21,7 @@
                         <h3>Registration</h3>
                         <p>Registrierung der Spende auf unserer Homepage</p>
                       </li>
-                      <li class="event" data-date="2:30 - 4:00pm">
+                      <li class="event" data-date="Step 2">
                         <h3>Abholung oder Abgabe</h3>
                         <p>
                           Wir holen Ihre registrierte Spende bei Ihnen ab oder
@@ -29,14 +29,14 @@
                           unser Büro in Bremen
                         </p>
                       </li>
-                      <li class="event" data-date="5:00 - 8:00pm">
+                      <li class="event" data-date="Step 3">
                         <h3>Aufbereitung und Verteilung</h3>
                         <p>
                           Ihre Spenden werden von uns gesäubert, repariert,
                           sortiert und verpackt
                         </p>
                       </li>
-                      <li class="event" data-date="8:30 - 9:30pm">
+                      <li class="event" data-date="Step 4">
                         <h3>Versand zu unseren Partnerländern</h3>
                         <p>
                           Sind genug Transportboxen befüllt, gehen die
@@ -44,7 +44,7 @@
                           Partnerländer
                         </p>
                       </li>
-                      <li class="event" data-date="8:30 - 9:30pm">
+                      <li class="event" data-date="Step 5">
                         <h3>Ankunft und Verteilung</h3>
                         <p>
                           Sind die Spenden angekommen, werden diese auf unsere Ausgabestellen in dem jewiligen Land verteilt und ausgegeben
