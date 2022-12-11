@@ -6,6 +6,7 @@ import AboutUs from "@/pages/AboutUs";
 import ImpressumPage from "@/pages/ImpressumPage";
 import FormularPage from "@/pages/FormularPage";
 import DonationOutput from "@/pages/DonationOutput";
+import DatenschutzPage from "@/pages/DatenschutzPage";
 // Umstellung auf WebHashHistory wenn veröffentlicht evt nötig
 
 const router = createRouter({
@@ -44,6 +45,10 @@ const router = createRouter({
       path: "/form/execute",
       component: DonationOutput,
     },
+    {
+      path: "/datenschutz",
+      component: DatenschutzPage,
+    }
   ],
 });
 

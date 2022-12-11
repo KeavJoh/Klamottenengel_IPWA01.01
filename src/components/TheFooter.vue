@@ -6,28 +6,47 @@
         <section class="mt-5">
           <div class="row text-center d-flex justify-content-center pt-2">
             <div class="col-md-2">
-              <h6 class="font-weight-bold active ">
-                <router-link to="/" class="text-white no-underline">Startseite</router-link>
+              <h6 class="font-weight-bold active">
+                <router-link to="/" class="text-white no-underline"
+                  >Startseite</router-link
+                >
               </h6>
             </div>
             <div class="col-md-2">
               <h6 class="font-weight-bold active">
-                <router-link to="/process" class="text-white no-underline">Ablauf</router-link>
+                <router-link to="/process" class="text-white no-underline"
+                  >Ablauf</router-link
+                >
               </h6>
             </div>
             <div class="col-md-2">
               <h6 class="font-weight-bold active">
-                <router-link to="/partner_countries" class="text-white no-underline">Partnerländer</router-link>
+                <router-link
+                  to="/partner_countries"
+                  class="text-white no-underline"
+                  >Partnerländer</router-link
+                >
               </h6>
             </div>
             <div class="col-md-2">
               <h6 class="font-weight-bold active">
-                <router-link to="/about_us" class="text-white no-underline">Über Uns</router-link>
+                <router-link to="/about_us" class="text-white no-underline"
+                  >Über Uns</router-link
+                >
               </h6>
             </div>
             <div class="col-md-2">
               <h6 class="font-weight-bold active">
-                <router-link to="/impressum" class="text-white no-underline">Impressum</router-link>
+                <router-link to="/impressum" class="text-white no-underline"
+                  >Impressum</router-link
+                >
+              </h6>
+            </div>
+            <div class="col-md-2">
+              <h6 class="font-weight-bold active">
+                <router-link to="/datenschutz" class="text-white no-underline"
+                  >Datenschutz</router-link
+                >
               </h6>
             </div>
           </div>
@@ -48,9 +67,7 @@
       </div>
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
         © 2022 Copyright:
-        <router-link class="text-white" to="/"
-          >Klamottenengel</router-link
-        >
+        <router-link class="text-white" to="/">Klamottenengel</router-link>
       </div>
     </footer>
   </div>
@@ -69,6 +86,6 @@ export default {
   margin-top: 5em;
 }
 .no-underline {
-    text-decoration: none;
+  text-decoration: none;
 }
 </style>

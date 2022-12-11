@@ -1,18 +1,18 @@
 <template>
-  <TheFreeColumsLayout/>
+<TheFreeColumsLayout>
+    
+</TheFreeColumsLayout>
 </template>
 
 <script>
 import TheFreeColumsLayout from "../layouts/TheFreeColumsLayout";
 
 export default {
-name: "ImpressumPage",
-components: {
+  name: "DatenschutzPage",
+  components: {
     TheFreeColumsLayout,
-}
-}
+  },
+};
 </script>
 
-<style scoped>
-
-</style>
+<style></style>
