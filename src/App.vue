@@ -32,6 +32,7 @@ export default {
 }
 .img-page {
   width: 400px;
+  max-width: 100%;
 }
 .border-vue {
   border-color: rgb(52, 73, 94) !important;
