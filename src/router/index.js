@@ -20,6 +20,9 @@ const router = createRouter({
       // deklaration der page
       path: "/",
       component: HomePage,
+      meta: {
+        title: "Startseite",
+      }
     },
     {
       path: "/process",
