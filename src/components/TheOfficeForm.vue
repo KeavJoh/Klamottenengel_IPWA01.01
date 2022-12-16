@@ -17,13 +17,13 @@
                 class="form-select mb-2"
                 aria-label="Kriesengebiet"
               >
-                <option value="1">Mali</option>
-                <option value="2">Somalia</option>
-                <option value="3">Djibuti</option>
-                <option value="4">Ukraine</option>
-                <option value="5">Eritrea</option>
-                <option value="6">Burkina-Faso</option>
-                <option value="7">Nach Bedarf</option>
+                <option value="Mali">Mali</option>
+                <option value="Somalia">Somalia</option>
+                <option value="Djibuti">Djibuti</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="Eritrea">Eritrea</option>
+                <option value="Burkina-Faso">Burkina-Faso</option>
+                <option value="Nach Bedarf">Nach Bedarf</option>
               </Field>
             </div>
           </div>

@@ -47,21 +47,6 @@ const store = createStore({
         informationen: officeDonationData.informationen,
       });
 
-      if (this.state.zielland == "1") {
-        this.state.zielland = "Mali";
-      } else if (this.state.zielland == "2") {
-        this.state.zielland = "Somalia";
-      } else if (this.state.zielland == "3") {
-        this.state.zielland = "Djibuti";
-      } else if (this.state.zielland == "4") {
-        this.state.zielland = "Ukraine";
-      } else if (this.state.zielland == "5") {
-        this.state.zielland = "Eritrea";
-      } else if (this.state.zielland == "6") {
-        this.state.zielland = "Burkina Faso";
-      } else {
-        this.state.zielland = "Nach Bedarf";
-      }
     },
 
     loadDonation(context, payload) {
@@ -89,21 +74,6 @@ const store = createStore({
         informationen: donationData.informationen,
       });
 
-      if (this.state.zielland == "1") {
-        this.state.zielland = "Mali";
-      } else if (this.state.zielland == "2") {
-        this.state.zielland = "Somalia";
-      } else if (this.state.zielland == "3") {
-        this.state.zielland = "Djibuti";
-      } else if (this.state.zielland == "4") {
-        this.state.zielland = "Ukraine";
-      } else if (this.state.zielland == "5") {
-        this.state.zielland = "Eritrea";
-      } else if (this.state.zielland == "6") {
-        this.state.zielland = "Burkina Faso";
-      } else {
-        this.state.zielland = "Nach Bedarf";
-      }
     },
 
     setFormularStatus(context, payload) {
