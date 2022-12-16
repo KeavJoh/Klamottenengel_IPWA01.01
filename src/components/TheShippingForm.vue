@@ -228,8 +228,8 @@ export default {
       Postleitzahl: yup
         .number("Bitte verwenden Sie nur Zahlen")
         .required("Bitte geben Sie Ihre Postleitzahl an")
-        .min(28000, "Keine gültige PLZ")
-        .max(28999, "Keine gültige PLZ"),
+        .min(28000, "PLZ liegt außerhalb des Gebietes")
+        .max(28999, "PLZ liegt außerhalb des Gebietes"),
       Telefonnummer: yup
         .string()
         .required("Bitte geben SIe Ihre Telefonnummer an"),
@@ -240,10 +240,8 @@ export default {
     });
     const date = ref();
     let pickedDateTime;
-    let testDateObject;
     const handleDate = (modelData) => {
       date.value = modelData;
-      this.testDateObject = date.value;
       let pickedDay = date.value.getDate();
       let pickedMonth = date.value.getMonth() + 1;
       let pickedYear = date.value.getFullYear();
@@ -256,7 +254,6 @@ export default {
       date,
       pickedDateTime,
       handleDate,
-      testDateObject,
     };
   },
   components: {
@@ -285,7 +282,6 @@ export default {
             informationen: values.Informationen,
           })
           .then(() => {
-            console.log("Erfolgreich");
             this.$store.dispatch("setFormularStatus", {
               activeOfficeFormular: false,
             })

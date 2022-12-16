@@ -1,6 +1,6 @@
 <template>
   <div class="row mb-3">
-    <h3 class="underline">Abholung bei Ihnen</h3>
+    <h3 class="underline">Abgabe in der Geschäftsstelle</h3>
     <p>Unsere Öffnungszeiten sind Mo - Fr von 15:00 Uhr bis 20:00 Uhr</p>
     <Form @submit="submitData" :validation-schema="schema" v-slot="{ errors }">
       <div>
@@ -81,14 +81,12 @@ export default {
   },
   methods: {
     submitData(values) {
-      console.log(values);
       this.$store
         .dispatch("loadDonationOffice", {
           zielland: values.Zielland,
           informationen: values.Informationen,
         })
         .then(() => {
-          console.log("Erfolgreich");
           this.$store.dispatch("setFormularStatus", {
             activeOfficeFormular: true,
           });

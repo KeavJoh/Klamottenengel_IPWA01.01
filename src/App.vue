@@ -27,10 +27,6 @@ export default {
 .text-vue2 {
   color: rgb(65, 184, 131);
 }
-/* #nav_active li a.router-link-exact-active {
-  color: rgb(65, 184, 131);
-  text-decoration: underline;
-} */
 .active a.router-link-exact-active {
   color: rgb(65, 184, 131) !important;
 }
